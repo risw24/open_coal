@@ -1,12 +1,12 @@
-# The Cost of Open Coal Forcasting
+# Open Coal Price Forecast
 
 This is my academic project in Data Mining Course (June 2022) in Faculty of Computer Science University of Indonesia. I do this project with my partner Hilmy Akbar. This forecasting is using Time Series Analysis with ARIMA model and do some other explnatory analysis.
 
 ## 1. Input
-We get the cost of coal from https://markets.businessinsider.com/commodities/coal-price. From the data, we using data from 1 Jan 2021 - 1 Jan 2022 to make forecasting model to predict coal open price after that.
+We get open coal price from https://markets.businessinsider.com/commodities/coal-price. From the data, we using data from 1 Jan 2021 - 1 Jan 2022 to make forecasting model to predict open coal price after that.
 ## 2. Data Analysis
 ![alt text](https://github.com/risw24/open_coal/blob/master/image/Open%20Coal%20Graph.png?raw=true)
-Coal open price increased in October - November because coal is used by Europeans to face winter. So, when the demand is increased, the coal open price is increased too.
+Open coal price increased in October - November because coal is used by Europeans to face winter. So, when the demand is increased, the open coal price is increased too.
 Beside that, there is no seasonalities in this graph because there is no seasonally repeating pattern.
 
 ![alt text](https://github.com/risw24/open_coal/blob/master/image/Open%20Coal%20with%20mean%20std.png?raw=true)
@@ -27,7 +27,7 @@ RMSE: 58.1
 <br/>
 It can be concluded that the average difference in results is 45.8 with a not so large error marked by the RMSE value.
 <br/>
-Estimated results until January - February the price of open coal is between 50 - 100
+Estimated results until January - February the open coal price is between 50 - 100
 ### Model 2 : Out-of-Time Cross validation (Training = 70%)
 ![alt text](https://github.com/risw24/open_coal/blob/master/image/model%202.png?raw=true)
 
@@ -39,7 +39,7 @@ RMSE: 107.0
 <br/>
 It can be concluded that the average difference in results is 98.2 with a very large error marked by a large RMSE value.
 <br/>
-The result of the Open Coal price forecast for January - February 2022 is slightly above the price of 50.
+The result of the open coal price forecast for January - February 2022 is slightly above the price of 50.
 ### Model 3: Out-of-Time Cross validation (Training = 85%)
 ![alt text](https://github.com/risw24/open_coal/blob/master/image/model%203.png?raw=true)
 
@@ -51,7 +51,7 @@ RMSE: 62.2
 <br/>
 It can be concluded that the average difference in results is 54.3 with a not so large error indicated by the RMSE value.
 <br/>
-The estimated results of the Open Coal price during January - February 2022 range from 50 - 100.
+The estimated results of the open coal price during January - February 2022 range from 50 - 100.
 ## 4. Conclusion
 The best model obtained is Model 1, which does not apply Cross Validation because of the high level of accuracy, namely MAE: 45.8.
 <br/>
